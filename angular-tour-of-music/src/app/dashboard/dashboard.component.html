@@ -1,0 +1,11 @@
+<h3>Top Songs</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let song of songs" class="col-1-4"
+      routerLink="/detail/{{song.cantante}}">
+    <div class="module song">
+      <h4>{{song.cancion}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-song-search></app-song-search>
